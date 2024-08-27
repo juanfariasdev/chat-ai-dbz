@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 0 0% 95%; /* Cinza Claro */
+    --foreground: 222.2 84% 4.9%; /* Preto */
+    --card: 0 0% 100%; /* Branco */
+    --card-foreground: 222.2 84% 4.9%; /* Preto */
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 27 87% 67%; /* Laranja Vibrante */
+    --primary-foreground: 0 0% 100%; /* Branco */
+    --secondary: 210 50% 30%; /* Azul Escuro */
+    --secondary-foreground: 210 40% 98%; /* Branco */
+    --muted: 210 16% 86%; /* Cinza Claro */
+    --muted-foreground: 222.2 84% 4.9%;
+    --accent: 27 87% 67%; /* Laranja Vibrante */
+    --accent-foreground: 0 0% 100%; /* Branco */
+    --destructive: 0 84.2% 60.2%; /* Vermelho */
+    --destructive-foreground: 210 40% 98%;
+    --border: 210 16% 86%; /* Cinza Claro */
+    --input: 214.3 31.8% 91.4%; /* Cinza Claro */
+    --ring: 27 87% 67%; /* Laranja Vibrante */
+    --radius: 0.5rem;
+    --chart-1: 27 87% 67%; /* Laranja */
+    --chart-2: 210 50% 30%; /* Azul */
+    --chart-3: 340 75% 55%; /* Vermelho */
+    --chart-4: 220 70% 50%; /* Azul Claro */
+    --chart-5: 43 74% 66%; /* Verde */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* Preto */
+    --foreground: 210 40% 98%; /* Branco */
+    --card: 222.2 84% 4.9%; /* Preto */
+    --card-foreground: 210 40% 98%; /* Branco */
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 27 87% 67%; /* Laranja Vibrante */
+    --primary-foreground: 0 0% 100%; /* Branco */
+    --secondary: 217.2 32.6% 17.5%; /* Azul Escuro */
+    --secondary-foreground: 210 40% 98%; /* Branco */
+    --muted: 217.2 32.6% 17.5%; /* Cinza Escuro */
+    --muted-foreground: 215 20.2% 65.1%; /* Cinza Claro */
+    --accent: 27 87% 67%; /* Laranja Vibrante */
+    --accent-foreground: 0 0% 100%; /* Branco */
+    --destructive: 0 62.8% 30.6%; /* Vermelho Escuro */
+    --destructive-foreground: 210 40% 98%; /* Branco */
+    --border: 217.2 32.6% 17.5%; /* Cinza Escuro */
+    --input: 217.2 32.6% 17.5%; /* Cinza Escuro */
+    --ring: 27 87% 67%; /* Laranja Vibrante */
+    --radius: 0.5rem;
+    --chart-1: 220 70% 50%; /* Azul Claro */
+    --chart-2: 160 60% 45%; /* Verde */
+    --chart-3: 340 75% 55%; /* Vermelho */
+    --chart-4: 280 65% 60%; /* Roxo */
+    --chart-5: 43 74% 66%; /* Verde */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
